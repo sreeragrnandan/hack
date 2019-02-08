@@ -38,25 +38,28 @@
 
 <body>
 
-  <?php
-    include('include/navbar.php');
-?>
+    <?php
+        include('include/navbar.php');
+    ?>
 
   <!--==========================
     Hero Section
   ============================-->
-  <section id="hero" class="wow fadeIn">
-    <h1 style="position:absolut;padding-left:30%">Lets start a Journey</h1>
+    <section id="hero" class="wow fadeIn">
+        <h1 style="position:absolut;padding-left:30%">Lets start a Journey</h1>
+    </section><!-- #hero -->
+
+
+
     
-  </section><!-- #hero -->
-  <img src="img/my.png" style="position: absolute;left:13%;bottom:-100px;width: 1090px;height:100%;border-radius:360px" class="center">
-  <div class="hover02 column">
-  <div>
-    <figure>
-        <img src="img/s.png" alt="logo" style="position: absolute;z-index: 100;left:36%;top:34%;width: 320px;height:100px;width:100px" class="ima">
-    </figure>
-    <span>Hover</span>
-  </div>
+    <img src="img/my.png" style="opacity:0.5;position: absolute;left:13%;bottom:-100px;width: 1090px;height:100%;border-radius:360px" class="center">
+    <div class="hover02 column">
+        <figure>
+            <img src="img/s.png" alt="logo" style="position: absolute;z-index: 100;left:36%;top:34%;width: 320px;height:100px;width:100px" class="ima">
+        </figure>
+        <span>Hover</span>
+    
+    </div>
 
 
 

@@ -137,3 +137,46 @@ figure:hover+span {
     
     
     }
+
+    .modal .loginbox-v4 {
+        margin: 0;
+        border: 0;
+    } 
+
+    .loginbox-v4 {
+        border-radius: 6px;
+        color: #29303B;
+        width: 380px;
+    }
+
+    .loginbox-v4__header {
+        border-bottom: solid 1px #DEDFE0;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        color: #29303B;
+        display: block;
+        font-weight: 600;
+        font-size: 15px;
+        padding: 24px 64px 24px 24px;
+    }
+    .loginbox-v4__content {
+        padding: 24px 24px 16px 24px;
+    }
+    .loginbox-v4__footer {
+        display: block;
+        padding: 0 0 24px 0;
+        text-align: center;
+    }
+
+    .modal-content-wrapper {
+        margin: 24px auto;
+        max-width: 100%;
+    }
+    .modal-dialog {
+        cursor: default;
+        position: relative;
+        min-width: 300px;
+        width: auto;
+        margin: 10vh auto;
+        transform: translate(0, 0) !important;
+    }
