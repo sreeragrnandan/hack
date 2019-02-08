@@ -1,0 +1,139 @@
+.ima{
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.hover02 figure img {
+	width: 300px;
+	height: auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover02 figure:hover img {
+	width: 350px;
+}
+
+.column {
+	margin: 15px 15px 0;
+	padding: 0;
+}
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.column div {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.column div:first-child {
+	margin-left: 0;
+}
+.column div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+.login-box{
+    width: 320px;
+    height: 320px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10%;
+    color: #fff;
+    top: 42%;
+    left: 50%;
+    position: relative;
+    transform: translate(-51%, 31%);
+    box-sizing: border-box;
+    padding: 70px 30px;   
+    }
+
+    .login-box h1{
+    margin: 0;
+    padding: 0 0 3px;
+    font-size: 25px;
+    border-bottom: 3px solid #4caf50;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+    
+    .login-box h4{
+        margin: 0;
+        padding: 0 0 3px;
+        font-size: 20px;
+        text-align: center;
+        }
+
+    .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    }
+    .login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    }
+
+    .login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+    }
+    .login-box input[type="text"],input[type="password"]
+    {
+    border: none;
+    border-bottom: 1px solid #4caf50;
+    background:transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    
+    }
+
+    .login-box input[type="submit"]
+    {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18x;
+    border-radius: 40px;
+    
+    
+    }
