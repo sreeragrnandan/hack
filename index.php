@@ -37,6 +37,8 @@
   <link href="css/demo.css" rel="stylesheet">
   <link href="css/base.css" rel="stylesheet">
   <link href="css/particles.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/anim.css">
+  <link rel="stylesheet" href="css/magic.css">
 
 </head>
 
@@ -73,9 +75,9 @@
         
     </div>
     <div class="grid__item theme-1">
-		<button class="particles-button">Send</button>
+		<button class="particles-button">Lets Go..!!</button>
 	</div>
-    
+    <h1 class="animated infinite bounce delay-2s">Example</h1>
     
 
 
@@ -125,7 +127,13 @@
     </script>
     <script src='js/anime.min.js'></script>
 	    <script src='js/particles.js'></script>
-	    <script src='js/demo.js'></script>
+        <script src='js/demo.js'></script>
+        <script src='js/gulpfile.js'></script>
+    <script>
+    setInterval(function(){ 
+	$('.grid__item theme-1').toggleClass('magictime boingInUp');
+        }, 3000 );
+    </script>
 
 </body>
 </html>

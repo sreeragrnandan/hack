@@ -44,3 +44,10 @@
 .no-js .particles-button {
 	grid-area: 1 / 1 / 2 / 2;
 }
+.particles-button:hover {background-color: #f70909}
+
+.particles-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

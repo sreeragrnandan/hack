@@ -19,6 +19,7 @@
             </ul>
           </li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="admin.php">Log Out</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
