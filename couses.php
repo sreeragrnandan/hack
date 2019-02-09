@@ -48,7 +48,7 @@
   <section id="hero" class="wow fadeIn">
     <div class="hero-container">
       <h1>Welcome to SRDM courses</h1>
-      <h2>Elegant Bootstrap Template for Startups, Apps &amp; more...</h2>
+      <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam id, magnam, nostrum expedita a voluptatibus voluptatum voluptas temporibus aliquam aut cum nihil animi laboriosam consequuntur architecto quo rerum, incidunt nemo!</h2>
       <div class="btns">
         <a href="#"><i class="fa fa-apple fa-3x"></i> App Store</a>
         <a href="#"><i class="fa fa-play fa-3x"></i> Google Play</a>

@@ -33,10 +33,6 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-  <link href="effects.css" rel="stylesheet">
-  <link href="css/demo.css" rel="stylesheet">
-  <link href="css/base.css" rel="stylesheet">
-  <link href="css/particles.css" rel="stylesheet">
 
 </head>
 
@@ -45,38 +41,14 @@
     <?php
         include('include/navbar.php');
     ?>
-                
-  <!--==========================
-    Hero Section
-  ============================-->
-  
-    <section id="hero" class="wow fadeIn">
-    <a class="link link--kukuri" href="#" data-letters="Lets Start a Ride" style="position:absolut;padding-left:30%">Lets Start a Ride</a>
-        
-    </section><!-- #hero -->
-    
 
-    
-    <img src="img/my.png" style="opacity:0.5;position: absolute;left:13%;bottom:-100px;width: 1090px;height:100%;border-radius:360px" class="center">
-    <div class="hover02 column">
-        <figure>
-            <img src="img/s.png" alt="logo" style="position: absolute;z-index: 100;left:36%;top:34%;width: 320px;height:100px;width:100px" class="ima">
-        </figure>
-    
-    </div>
-    <div class="talk-bubble tri-right round right-in" style="position: absolute;left:19%;top:193px;border-radius:20px">
-        <div class="talktext">
-            <p>Hai am</p><b>Jessi</b>
-            <p>and, i'm here to guide you to the 
-            various levels of coding world..!!</p>
-        </div>
-        
-    </div>
-    <div class="grid__item theme-1">
-		<button class="particles-button">Send</button>
-	</div>
-    
-    
+    Welcome to [store name], your number one source for all things [product, ie: shoes, bags, dog treats]. We're dedicated to giving you the very best of [product], with a focus on [three characteristics, ie: dependability, customer service and uniqueness.]
+Founded in [year] by [founder's name], [store name] has come a long way from its beginnings in a [starting location, ie: home office, toolshed, Houston, TX.]. When [store founder] first started out, his/her passion for [passion of founder, ie: helping other parents be more eco-friendly, providing the best equipment for his fellow musicians] drove him to [action, ie: do intense research, quit her day job], and gave him the impetus to turn hard work and inspiration into to a booming online store. We now serve customers all over [place, ie: the US, the world, the Austin area], and are thrilled to be a part of the [adjective, ie: quirky, eco-friendly, fair trade] wing of the [industry type, ie: fashion, baked goods, watches] industry.
+
+We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
+
+Sincerely,
+Name, [title, ie: CEO, Founder, etc.]
 
 
 
@@ -107,25 +79,6 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
-  <script>
-      $(function() {
-        var text = $(".text");
-        $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 200) {
-        text.removeClass("hidden");
-        } else {
-        text.addClass("hidden");
-        }
-        });
-        });
-
-    </script>
-    <script src='js/anime.min.js'></script>
-	    <script src='js/particles.js'></script>
-	    <script src='js/demo.js'></script>
 
 </body>
 </html>

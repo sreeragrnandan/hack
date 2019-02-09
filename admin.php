@@ -2,8 +2,7 @@
     include('config.php');
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -52,6 +51,7 @@
 
 
 	<img src="img/g.png" style="width: 20%;height: 40%;left: 47px;bottom: 103px;position: absolute;">
+	<img src="img/r.png" style="width: 20%;height: 40%;right: 47px;bottom: 103px;position: absolute;">
 	<div id="">
 		<div class="loginbox-v4 loginbox-v4--signup modal-content-wrapper js-signin-boxud-app-loader ud-angular--social-auth--app ud-app-loaded" data-module-id="social-auth" data-module-args="{&quot;customPopupIdentifier&quot;:&quot;&quot;,&quot;mode&quot;:&quot;SIGNUP&quot;}" data-purpose="sign-up-box" perimeter-x="" signin-form-mobile-fix="">
 			<div class="ud-component--social-auth--auth-seen-by-user-tracker" ng-non-bindable="">
