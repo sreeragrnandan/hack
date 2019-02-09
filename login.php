@@ -1,5 +1,25 @@
 <?php
-    include('config.php');
+session_start();
+include('config.php');
+if(isset($_POST['save']))
+{
+    $u=$_POST['un'];
+    $p=$_POST['pw'];
+    $sql="select password from users where username = '$u'";
+    $result=mysqli_query($conn,$sql); 
+    if(mysqli_num_rows($result)>0){
+        $row=mysqli_fetch_assoc($result);
+        $pass=$row['password'];
+        if($pass==$p){
+            $_SESSION['data']='$u';
+            header('Location:index.php');
+        }
+        else {
+            $n= "Incorrect username or password";
+        }
+    }
+    else{ echo "invalid username"; }
+}
 ?>
 
 <!DOCTYPE html>
@@ -57,11 +77,11 @@
         <form class="form-inline form-signin" align="center" autocomplete="off" action="" method="POST">
             <div>
             	<i class="fas fa-user  faa-ring animated"></i>
-            	<input type="text" class="form-control" name="username" id="username" autocomplete="off" autofocus value style="margin-bottom:5px" placeholder="Username"><br>
+            	<input type="text" class="form-control" name="un" id="username" autocomplete="off" autofocus value style="margin-bottom:5px" placeholder="Username"><br>
             </div>
             <div>
                 <i class="fas fa-lock faa-flash animated"></i>
-                <input type="password" class="form-control" name="password" id="password" autocomplete="off" autofocus value style="margin-bottom:5px" placeholder="password"><br>
+                <input type="password" class="form-control" name="pw" id="password" autocomplete="off" autofocus value style="margin-bottom:5px" placeholder="password"><br>
                 <input class="bt btn-large btn-primary" type="submit" name="save" id="save" value="Sign In">
             </div>
         </form>

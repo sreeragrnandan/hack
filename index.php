@@ -1,7 +1,33 @@
 <?php
-    include('config.php');
+        if(isset($_POST['save'])){
+			include('config.php');
+            if(!$conn)
+            {
+                die("connet faild".mysqli_connect_error());
+			}
+			echo "connection successfull";
+			$at="";
+            $a=$_POST["name"];
+            $b=$_POST["batch"];
+            $c=$_POST["phone"];
+            $d=$_POST["branch"];
+            $e=$_POST["np"];
+            $f=$_POST["food"];
+            $data="insert into participants values('$at','$a','$b','$c','$d','$e','$f')";
+            $result=mysqli_query($conn,$data);
+            if($result){
+                $db_msg = " successfull";
+            }
+            else{
+				$sql="select name from participants where phone = '$c'";
+				$result=mysqli_query($conn,$sql);
+				if(mysqli_num_rows($result)>0){
+					$n=" Number already exist";
+				}
+                $db_msg = " failed".$n; //.mysqli_error($conn)
+            }
+        }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

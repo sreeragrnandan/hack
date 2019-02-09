@@ -1,6 +1,3 @@
-<?php
-    include('config.php');
-?>
 
 
 
@@ -45,8 +42,33 @@
 
 	
 	<?php
-		include('include/navbar.php');
-	?>
+        if(isset($_POST['submit'])){
+			include('config.php');
+            if(!$conn)
+            {
+                die("connet faild".mysqli_connect_error());
+			}
+			echo "connection successfull";
+			$at="";
+            $a=$_POST["fullname"];
+            $b=$_POST["un"];
+            $c=$_POST["pw"];
+            $data="insert into users values('$at','$a',$b','$c','0','0','0')";
+            $result=mysqli_query($conn,$data);
+            if($result){
+                $db_msg = " successfull";
+            }
+            else{
+				echo "faild";
+				// $sql="select name from participants where phone = '$c'";
+				// $result=mysqli_query($conn,$sql);
+				// if(mysqli_num_rows($result)>0){
+				// 	$n=" Number already exist";
+				// }
+                // $db_msg = " failed".$n; //.mysqli_error($conn)
+            }
+        }
+?>
 
 
 
@@ -61,7 +83,7 @@
                 Sign Up and Start Learning!
             </div>
 			<div class="loginbox-v4__content">
-                <form class="signin-form dj ng-pristine ng-valid" signin-form="" name="signup-form" id="signup-form" signin-box-class-name="js-signin-box" action="index.php" action-type="signup" method="post"> 
+                <form class="signin-form dj ng-pristine ng-valid" signin-form="" name="signup-form" id="signup-form" signin-box-class-name="js-signin-box" action="admin.php" action-type="signup" method="post"> 
 					<input type="hidden" name="csrfmiddlewaretoken" value="2lIVNZyo8TaJZBhu2U9RDgRyquXhmHiorNLoN7Q4H1cax3EBJiFCvcwLLqPegXkp" autocomplete="off"> 
 					<div class="manage-fields-wrapper">
 						<input type="hidden" name="locale" value="en_US" autocomplete="off"> 
@@ -74,13 +96,13 @@
 						</div> 
 						<div class="form-field-container  labeled ud-component--social-auth--django-email-field" id="form-item-email" ng-non-bindable="">
 							<div>
-								<input name="email" required="" maxlength="64" minlength="7" placeholder="Email" data-purpose="email" type="email" class="form-control" value="">
+								<input name="un" required="" maxlength="64" minlength="7" placeholder="Email" data-purpose="email" type="email" class="form-control" value="">
 							</div>
 						</div> 
 						<div class="form-field-container  labeled " id="form-item-password"> 
 							<label class="control-label " for="id_password">Password</label> 
 							<div id="tooltip-reference-password" class="tooltip-reference pos-r "> 
-								<input type="password" name="password" class="textinput textInput form-control" data-purpose="password" required="" minlength="6" id="id_password" maxlength="64" placeholder="Password"> 
+								<input type="password" name="pw" class="textinput textInput form-control" data-purpose="password" required="" minlength="6" id="id_password" maxlength="64" placeholder="Password"> 
 							</div>
 						</div> 
 						<div class="form-field-container  labeled " id="form-item-subscribe_to_emails"> 
